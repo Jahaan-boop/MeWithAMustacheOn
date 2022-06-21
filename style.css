@@ -1,0 +1,18 @@
+.btn-success:hover{
+background-color: teal;
+}
+
+canvas{
+animation-name:rednose;
+animation-duration:4s;
+animation-iteration-count:infinite;
+}
+
+@keyframes rednose{
+from{
+box-shadow:1px 1px 38px red;
+}
+to{
+box-shadow:1px 1px 38px gray;
+}
+}
