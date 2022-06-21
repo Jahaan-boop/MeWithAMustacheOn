@@ -16,7 +16,7 @@ mustache=loadImage("mustache.png")
 
 function draw(){
     image(video,0,0,300,300);
-image(mustache,mustache_X,mustache_Y,30,30)
+image(mustache,mustache_X,mustache_Y,60,60)
     }
 
 function snapshot(){
@@ -30,7 +30,7 @@ console.log("PoseNet has been successfully initialized.")
 function gotPoses(results){
 if(results.length>0){
 console.log(results);
-mustache_X = results[0].pose.nose.x-10;
+mustache_X = results[0].pose.nose.x-20;
 mustache_Y = results[0].pose.nose.y+10;
 console.log("mustache_X:"+mustache_X);
 console.log("mustache_Y:"+mustache_Y);
